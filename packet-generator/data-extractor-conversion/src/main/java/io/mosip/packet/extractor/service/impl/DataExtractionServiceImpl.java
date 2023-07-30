@@ -62,13 +62,13 @@ public class DataExtractionServiceImpl implements DataExtractionService {
     @Value("${mosip.packet.creater.source}")
     private String source;
 
-    @Value("${mosip.packet.creater.max-threadpool-count:1}")
+    @Value("${mosip.packet.creater.max-threadpool-count:10}")
     private Integer maxThreadPoolCount;
 
     @Value("${mosip.packet.creater.max-records-process-per-threadpool:100}")
     private Integer maxRecordsCountPerThreadPool;
 
-    @Value("${mosip.packet.creater.max-thread-execution-count:100}")
+    @Value("${mosip.packet.creater.max-thread-execution-count:10}")
     private Integer maxThreadExecCount;
 
     @Value("${mosip.packet.uploader.enable:true}")

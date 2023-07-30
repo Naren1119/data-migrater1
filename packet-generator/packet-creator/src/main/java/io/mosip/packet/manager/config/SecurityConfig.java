@@ -38,7 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(final HttpSecurity httpSecurity) throws Exception {
-		String[] ignoringMatches = {"/packetcreator/**", "/dataExtractor/**"};
+		String[] ignoringMatches = {"/packetcreator/**", "/dataExtractor/**", "/databaseController/**"};
 		httpSecurity.csrf()
 				.ignoringAntMatchers(ignoringMatches)
 				.and()
