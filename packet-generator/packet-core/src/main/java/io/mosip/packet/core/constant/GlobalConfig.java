@@ -79,8 +79,7 @@ public class GlobalConfig {
         Boolean isAllProcessCompleted = true;
 
         for(CustomizedThreadPoolExecutor executor : THREAD_POOL_EXECUTOR_LIST) {
-            List<ThreadPoolExecutor> executerList = new ArrayList<>(executor.getPoolMap());
-            for(ThreadPoolExecutor entry : executerList) {
+            for(ThreadPoolExecutor entry : executor.getPoolMap()) {
                 pendingTaskCount +=entry.getActiveCount();
             }
 

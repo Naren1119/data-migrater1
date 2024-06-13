@@ -12,10 +12,10 @@
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<fileNamePattern>${APP_LOG_ROOT}/migrator-%i.log</fileNamePattern>
 			<minIndex>1</minIndex>
-			<maxIndex>100</maxIndex>
+			<maxIndex>10</maxIndex>
 		</rollingPolicy>
 		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<maxFileSize>100MB</maxFileSize>
+			<maxFileSize>10MB</maxFileSize>
 		</triggeringPolicy>
 	</appender>
 
